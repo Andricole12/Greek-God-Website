@@ -456,3 +456,8 @@
     letter-spacing: 1px;
     box-shadow: none;
 }
+
+.bg-img {
+    background-image: url("../img/background-1.png");
+    background-size: cover;
+}
