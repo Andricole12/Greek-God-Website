@@ -461,3 +461,7 @@
     background-image: url("../img/background-1.png");
     background-size: cover;
 }
+
+.center {
+    justify-content: center;
+}

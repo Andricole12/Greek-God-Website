@@ -28,7 +28,7 @@
 
     // Modal Video
     var $videoSrc;
-    $('.btn-play').click(function () {
+    $('.play').click(function () {
         $videoSrc = $(this).data("src");
     });
     console.log($videoSrc);
