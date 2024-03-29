@@ -9,46 +9,29 @@
 <body>
 <!-- partial:index.partial.html -->
 <div class="page">
-    <div class="header">
-        How it's done
+    <div class="header" style="margin-top: 40vh;">
+        <b>Your Portal to Myth and Legend</b>
     </div>
     <div class="content">
-        <p>
-            The HTML content you're reading right now is overlaid with a full-screen <b>&lt;canvas&gt;</b> element.
-            There is a fragment shader that defines opacity and color for each pixel of the <b>&lt;canvas&gt;</b>.
-            Shader input values are <b>animation progress</b>, <b>time</b>, and <b>resolution</b>.
+        <p>    
+            <b class="header" style="font-size: 30px;">Mission</b><br>
+            To celebrate and preserve the rich heritage of 
+            Greek mythology by providing a <b>comprehensive online platform</b> that <b>educates</b>, 
+            <b>entertains</b> , and <b>inspires</b><br> audiences of all ages and backgrounds.
         </p>
         <p>
-            While <b>time</b> and <b>window size (resolution)</b> are super easy to gather, for <b>animation progress</b> I use <a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/" target="_blank">GSAP ScrollTrigger</a> plugin.
-        </p>
-        <p>
-            Once the inputs are prepared, we pass them as uniforms to the shader.
-            The WebGL part of this demo is a basic JS boilerplate to render a fragment shader on the single full-screen plane. No extra libraries here.
-        </p>
-        <p>
-            The fragment shader is based on <a href="https://thebookofshaders.com/13/" target="_blank">Fractal Brownian Motion (fBm)</a> noise.
-        </p>
-        <p>
-            First, we create a semi-transparent mask to define a contour of burning paper. It is basically a low-scale fBm noise with <b>animation progress</b> value used as a threshold.
-            Taking the same fBm noise with different thresholds we can
-            <br>
-            (a) darken parts of the paper so each pixel gets darker before turning transparent
-            <br>
-            (b) define the stripe along the paper edge for fire.
-        </p>
-        <p>
-            The fire is done as another two fBm based functions, one for shape and one for color. Both have a higher scale and both are animated with <b>time</b> value instead of <b>animation progress</b>.
-        </p>
-
-        <p class="last-line">
-            <a href="https://www.linkedin.com/in/ksenia-kondrashova/" target="_blank">linkedIn</a> | <a href="https://codepen.io/ksenia-k" target="_blank">codepen</a> | <a href="https://twitter.com/uuuuuulala" target="_blank">twitter (X)</a>
+            <b class="header" style="font-size: 30px;">Vision</b><br>
+            Our vision is to become the <b>ultimate destination Website</b> <br>for all things related to Greek mythology, 
+            fostering a <b>global community</b> of<br> enthusiasts, scholars, and storytellers.
+            We aim to ignite <b>curiosity</b>, spark <b>imagination</b>,<br> and promote a <b>deeper understanding</b> of the 
+            timeless tales that have<br> shaped cultures for millennia.
         </p>
     </div>
 </div>
 
 <canvas id="fire-overlay"></canvas>
 <div class="scroll-msg">
-    <div>Hello 👋</div>
+    <div>⚡ About Pantheon 🔥</div>
     <div>scroll me</div>
     <div class="arrow-animated">&darr;</div>
 </div>
